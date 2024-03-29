@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Meeting</title>
+<link rel="stylesheet" href="booking.css">
+</head>
+<body>
+<div class="booking-container">
+    <h1>Book Meeting</h1>
+    <form id="bookingForm">
+        <div class="form-field">
+            <label for="name">Name And Surname</label>
+            <input type="text" id="name" name="name" placeholder="Anass Lamghafri" required>
+        </div>
+        <div class="form-field">
+            <label for="supervisor">Supervisor</label>
+            <input type="text" id="supervisor" name="supervisor" required>
+        </div>
+        <div class="form-field">
+            <label for="meetingDate">Meeting date</label>
+            <input type="date" id="meetingDate" name="meetingDate" required>
+        </div>
+        <div class="form-field">
+            <label for="attendees">Number of attendees</label>
+            <div class="attendees-controls">
+                <button type="button" onclick="changeAttendeeCount(-1)">-</button>
+                <input type="number" id="attendees" name="attendees" value="1" min="1" readonly>
+                <button type="button" onclick="changeAttendeeCount(1)">+</button>
+            </div>
+        </div>
+        <button type="submit" class="book-button">Book</button>
+    </form>
+    <nav class="navigation">
+        <button class="home-button">Home</button>
+    </nav>
+</div>
+<script src="booking.js"></script>
+</body>
+</html>
