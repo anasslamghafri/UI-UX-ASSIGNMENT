@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Self Report</title>
+<link rel="stylesheet" href="SR.css">
+</head>
+<body>
+<div class="self-report-container">
+    <h1>Student Self Report</h1>
+    <form id="selfReportForm">
+        <label for="reportTitle">Self-Report Title</label>
+        <input type="text" id="reportTitle" name="reportTitle" placeholder="Progress In Assignment" required>
+       
+        <label for="reportContent">Self-Report</label>
+        <textarea id="reportContent" name="reportContent" placeholder="Dear Mr John, This is my self report about" required></textarea>
+       
+        <label for="mainQuestions">Main Questions</label>
+        <input type="text" id="mainQuestions" name="mainQuestions" placeholder="I have a question about part 4" required>
+       
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+</div>
+<script src="SR.js"></script>
+</body>
+</html>
